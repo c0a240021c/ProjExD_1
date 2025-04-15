@@ -25,7 +25,7 @@ def main():
 
         key_lst = pg.key.get_pressed()
         
-        k_lst = [-1,0]
+        k_lst = [0,0]
 
         
         if key_lst[pg.K_UP]:
@@ -36,8 +36,8 @@ def main():
             k_lst[0] += -1
         if key_lst[pg.K_RIGHT]:
             k_lst[0] += 2
-
         
+        kk_rct.move_ip((-1,0))
         
         kk_rct.move_ip(k_lst)
 
